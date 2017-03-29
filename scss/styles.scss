@@ -1,23 +1,50 @@
 // Imports
-@import "partials/_reset.scss";
-@import "partials/_clearfix.scss";
-@import "partials/_general_styles.scss";
+@import "./partials/_reset.scss";
+@import "./partials/_clearfix.scss";
+@import "./partials/_general_styles.scss";
 
 
 
 // 1. Many small items in a grid
 .small-grid-flexbox {
-
   ul {
 
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    // margin: auto;
+
     li {
-      flex-basis: 10%;
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 10%;
+      height: 28px;
     }
   }
 
+
+  @media (min-width: 900px) {
+    ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 400px;
+    justify-content: center;
+    margin: auto;
+
+      li {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 38px;
+        height: 38px;
+
+      }
+    } }
 }
 
 
