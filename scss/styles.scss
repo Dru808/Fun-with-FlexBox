@@ -1,8 +1,26 @@
 // Imports
+@import "partials/_reset.scss";
+@import "partials/_clearfix.scss";
+@import "partials/_general_styles.scss";
 
 
 
 // 1. Many small items in a grid
+.small-grid-flexbox {
+
+  ul {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    li {
+      flex-basis: 10%;
+    }
+  }
+
+}
+
+
 
 
 
