@@ -21,7 +21,7 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      width: 10%;
+      width: 9.7%;
       height: 28px;
     }
   }
@@ -52,11 +52,71 @@
 
 
 // 2. 2-Column Grid
+.two-col-grid-flexbox {
+
+  @media (min-width: 900px) {
+  display: flex;
+  flex-direction: row-reverse;
+
+    .column-1 {
+      width: 50%;
+      height: 60%;
+    }
+
+    .column-2 {
+      width: 50%;
+
+    }
+  }
+}
 
 
 
 // 3. Centering
 
+.centering-formula-1 {
+  display: flex;
+  flex-flow: row-nowrap;
+  justify-content: center;
+  align-items: center;
+  .centered {
+
+  }
+}
+.centering-formula-2 {
+  display: flex;
+  flex-flow: row-nowrap;
+    .centered {
+      margin: auto;
+    }
+
+}
+
 
 
 // 4. Ordering
+
+  .ordering-block {
+    display: flex;
+    justify-content: center;
+    .item-a {
+      width: 5%;
+      margin: 1%;
+    }
+
+    .item-b {
+      width: 15%;
+      margin: 1%;
+    }
+
+    .item-c {
+      width: 20%;
+      margin: 1%;
+    }
+
+    .item-d {
+      width: 30%;
+      margin: 1%;
+    }
+
+  }
