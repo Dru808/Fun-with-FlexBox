@@ -95,28 +95,79 @@
 
 
 // 4. Ordering
-
+@media (min-width: 1200px) {
   .ordering-block {
     display: flex;
     justify-content: center;
     .item-a {
       width: 5%;
       margin: 1%;
+      order:4;
     }
 
     .item-b {
       width: 15%;
       margin: 1%;
+      order:3;
     }
 
     .item-c {
       width: 20%;
       margin: 1%;
+      order:2;
     }
 
     .item-d {
       width: 30%;
       margin: 1%;
+      order: 1;
     }
 
   }
+}
+
+@media (min-width: 900px) {
+  .ordering-block {
+    display: flex;
+    justify-content: center;
+    .item-a {
+      width: 5%;
+    }
+
+    .item-b {
+      width: 15%;
+    }
+
+    .item-c {
+      width: 20%;
+    }
+
+    .item-d {
+      width: 30%;
+    }
+
+  }
+}
+
+// @media (max-width: 899px) {
+//   .ordering-block {
+//     // justify-content: center;
+//     .item-a {
+//       width: 100%;
+//     }
+
+//     .item-b {
+//       width: 100%;
+//     }
+
+//     .item-c {
+//       width: 100%;
+//     }
+
+//     .item-d {
+//       width: 100%;
+//     }
+
+//   }
+// }
+
